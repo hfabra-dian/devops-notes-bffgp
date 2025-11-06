@@ -1,12 +1,11 @@
 
-mport pytest
-
+import pytest
+from gestor import GestorTareas
 # Suponemos que existe una clase Tarea y un gestor GestorTareas
 # que implementaremos después del diseño de pruebas.
 
 @pytest.fixture
 def gestor():
-    from app import GestorTareas  # Se asumirá que el código estará en app.py
     return GestorTareas()
 
 def test_crear_tarea(gestor):
